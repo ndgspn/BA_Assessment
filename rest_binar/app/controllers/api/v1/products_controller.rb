@@ -17,6 +17,11 @@ module Api::V1
       render json: product
     end
 
+    def update
+      product = RestClient.put product_uri+"/"+"#{product_id}", product_params.to_json, authorize
+      render json: product
+    end
+
     def destroy
       product = RestClient.delete product_uri+"/"+"#{product_id}", authorize
       render json: product
