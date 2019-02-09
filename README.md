@@ -31,3 +31,94 @@ Bagaimana menangani keamanan dalam pengiriman data (backend dan mobile apps) pad
 - Membatasi akses dengan beberapa role, misal admin dan general_users. Admin memiliki full akses untuk melakukan berbagai hal yang berhubungan pengelolaan data, sedangkan general_users hanya diberikan akses ke fitur tertentu saja.
 - Autentikasi untuk setiap users, misal fitur login/logout
 - Autentikasi API, misal dengan jwt atau OAuth2
+
+### Question 3
+Buatlah sebuah service RESTFul API berdasarkan dokumentasi apiary berikut.
+https://testbinar.docs.apiary.io/. Boleh menggunakan bahasa apapun.
+- Sertakan panduan cara instalasi tools, pengaturan database, penggunaan kode dan cara ujicoba kode dalam file Readme.md
+
+###### Create new rails application
+```
+rails new rest_binar
+```
+###### Test the code via Postman
+```
+# Login
+# 'POST'
+http://localhost:3000/auth/login
+
+# Create User
+# 'POST'
+http://localhost:3000/auth/signup
+
+# Show Data
+# 'GET'
+http://localhost:3000/v1/products
+
+# Show Data by ID
+# 'GET' 
+http://localhost:3000/v1/products/:id
+
+# Create Data
+# 'POST'
+# Raw Data Example:
+# {
+#    "name": "polygon xtrada x4",
+#    "price": "2180",
+#    "imageurl": "https://polygoneeimages.s3.amazonaws.com/images/19342/xtrada_5_p.jpg"
+#}
+http://localhost:3000/v1/products/
+
+# Update Data
+# PUT
+# Raw Data Example:
+# {
+#    "name": "polygon xtrada x4",
+#}
+http://localhost:3000/v1/products/:id
+
+# Delete
+# 'DELETE'
+http://localhost:3000/v1/products/:id
+
+```
+
+don't forget to add Headers `Content-Type: Application/json`
+
+##### API V2
+```
+http://localhost:3000/v2/products/
+```
+
+
+##### Sertakan tangkapan layar proses ujicoba API menggunakan postman.
+###### Auth Login
+![Auth login](https://github.com/ndgspn/BA_Assessment/blob/master/images/auth_login.png)
+
+###### Create User
+![Auth signup](https://github.com/ndgspn/BA_Assessment/blob/master/images/auth_signup.png)
+
+###### Show Data
+![Show data](https://github.com/ndgspn/BA_Assessment/blob/master/images/show_all_products.png)
+
+###### Show Data by ID
+![Show data by id](https://github.com/ndgspn/BA_Assessment/blob/master/images/show_data_by_id.png)
+
+###### Create Data
+![Create data](https://github.com/ndgspn/BA_Assessment/blob/master/images/create.png)
+
+###### Update Data
+![Update data](https://github.com/ndgspn/BA_Assessment/blob/master/images/update.png)
+
+###### Delete Data by ID
+![Delete data](https://github.com/ndgspn/BA_Assessment/blob/master/images/delete.png)
+
+###### API V2 Show Data
+![Api v2](https://github.com/ndgspn/BA_Assessment/blob/master/images/products_v2.png)
+
+### Question 4 
+Dari dokumen https://testbinar.docs.apiary.io/, menurut anda, apakah ada desian API yang kurang maupun keliru? Jika ada, tuliskan kekurangan-kekurangan desain tersebut dan bagaimana seharusnya dokumentasi itu ditulis.
+```
+Awalnya terasa kurang jelas, tapi setelah ditelusuri cukup jelas. 
+Entah mengapa di bagian API Update Product ketika dijalankan response menunjukan Data berhasil diubah, namun ketika dicek kembali data tidak berubah.
+```
