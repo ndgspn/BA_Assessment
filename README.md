@@ -8,8 +8,7 @@ Desainlah stack backend dan micro service layanan tersebut beserta tools dan ala
 ##### Answer :
 
 ###### Batasan :
-- Diasumsikan bahwa server menggunakan Ubuntu OS versi terbaru, dbms mysql, dan Ruby on Rails karena penjawab lebih menguasai menggunakan ketiga tools tersebut.
-- Untuk melakukan deploy ke production server diasumsikan bahwa penjawab menggunakan Capistrano.
+- Diasumsikan bahwa server menggunakan Ubuntu OS versi terbaru, dbms mysql, dan Ruby on Rails.
 
 ###### Desain V1
 ![Desain V1](https://github.com/ndgspn/BA_Assessment/blob/master/diagram/desain%20v1.png)
