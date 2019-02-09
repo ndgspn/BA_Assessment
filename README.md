@@ -41,7 +41,16 @@ https://testbinar.docs.apiary.io/. Boleh menggunakan bahasa apapun.
 ```
 rails new rest_binar
 ```
-###### Test the code via Postman
+atau untuk menggunakan aplikasi yang sudah dibuat :
+
+```
+git clone git@github.com:ndgspn/BA_Assessment.git
+cd BA_Assessment/rest_binar
+rails s
+```
+Aplikiasi bisa diakses melalui url http://localhost:3000
+
+###### Test via Postman
 ```
 # Login
 # 'POST'
