@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :products
     end
     namespace :v2 do
-      resources :products
+      resources :products, only: [:index]
     end
   end
 end
