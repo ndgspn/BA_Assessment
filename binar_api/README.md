@@ -29,31 +29,33 @@ Prefix Verb   URI Pattern                                                       
 # Example
 
 ```
-# Login
+##### Login
 http://localhost:3000/auth/login
 
-# Create User
+##### Create User
 http://localhost:3000/auth/signup
 
-# Show Data
+##### Show Data
 http://localhost:3000/v1/products
 
-# Show Data by ID
+##### Show Data by ID
 http://localhost:3000/v1/products/:id
 
-# Create Data
-# Raw Data Example:
-# {
-#    "name": "polygon xtrada x4",
-#    "price": "2180",
-#    "imageurl": "https://polygoneeimages.s3.amazonaws.com/images/19342/xtrada_5_p.jpg"
-#}
+##### Create Data
 http://localhost:3000/v1/products/
+```
+ Raw Data Example:
+ {
+    "name": "polygon xtrada x4",
+    "price": "2180",
+    "imageurl": "https://polygoneeimages.s3.amazonaws.com/images/19342/xtrada_5_p.jpg"
+}
+```
 
-# Update Data
+##### Update Data
 http://localhost:3000/v1/products/:id
 
-# Delete
+##### Delete
 http://localhost:3000/v1/products/:id
 
 
