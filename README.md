@@ -39,32 +39,33 @@ https://testbinar.docs.apiary.io/. Boleh menggunakan bahasa apapun.
 Panduan: https://github.com/ndgspn/BA_Assessment/tree/master/binar_api
 
 ##### Sertakan tangkapan layar proses ujicoba API menggunakan postman.
-###### Auth Login
-![Auth login](https://github.com/ndgspn/BA_Assessment/blob/master/images/auth_login.png)
 
 ###### Create User
 ![Auth signup](https://github.com/ndgspn/BA_Assessment/blob/master/images/auth_signup.png)
 
+###### Auth Login
+![Auth login](https://github.com/ndgspn/BA_Assessment/blob/master/images/auth_login.png)
+
 ###### Show Data
-![Show data](https://github.com/ndgspn/BA_Assessment/blob/master/images/show_all_products.png)
+![Show data](https://github.com/ndgspn/BA_Assessment/blob/master/images/show_product.png)
 
 ###### Show Data by ID
-![Show data by id](https://github.com/ndgspn/BA_Assessment/blob/master/images/show_data_by_id.png)
+![Show data by id](https://github.com/ndgspn/BA_Assessment/blob/master/images/show_by_id.png)
 
 ###### Create Data
-![Create data](https://github.com/ndgspn/BA_Assessment/blob/master/images/create.png)
+![Create data](https://github.com/ndgspn/BA_Assessment/blob/master/images/create_product.png)
 
 ###### Update Data
-![Update data](https://github.com/ndgspn/BA_Assessment/blob/master/images/update.png)
+![Update data](https://github.com/ndgspn/BA_Assessment/blob/master/images/update_product.png)
 
 ###### Delete Data by ID
-![Delete data](https://github.com/ndgspn/BA_Assessment/blob/master/images/delete.png)
+![Delete data](https://github.com/ndgspn/BA_Assessment/blob/master/images/delete_product.png)
 
-###### API V2 Show Data
-![Api v2](https://github.com/ndgspn/BA_Assessment/blob/master/images/products_v2.png)
+###### API V2
+![Api v2](https://github.com/ndgspn/BA_Assessment/blob/master/images/api_v2.png)
 
 ### Question 4 
 Dari dokumen https://testbinar.docs.apiary.io/, menurut anda, apakah ada desian API yang kurang maupun keliru? Jika ada, tuliskan kekurangan-kekurangan desain tersebut dan bagaimana seharusnya dokumentasi itu ditulis.
 ```
-Awalnya terasa kurang jelas, tapi setelah ditelusuri cukup jelas. 
+Cukup jelas.
 ```
