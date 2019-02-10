@@ -125,5 +125,4 @@ http://localhost:3000/v2/products/
 Dari dokumen https://testbinar.docs.apiary.io/, menurut anda, apakah ada desian API yang kurang maupun keliru? Jika ada, tuliskan kekurangan-kekurangan desain tersebut dan bagaimana seharusnya dokumentasi itu ditulis.
 ```
 Awalnya terasa kurang jelas, tapi setelah ditelusuri cukup jelas. 
-Entah mengapa di bagian API Update Product ketika dijalankan response menunjukan Data berhasil diubah, namun ketika dicek kembali data tidak berubah.
 ```
