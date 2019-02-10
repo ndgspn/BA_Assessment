@@ -1,6 +1,6 @@
 # README
 
-### This appliation use JWT (Json Web Token)
+### This appliation use RoR, JWT (Json Web Token) & sqlite3 .
 ```
 git clone git@github.com:ndgspn/BA_Assessment.git
 cd BA_Assessment/binar_api
