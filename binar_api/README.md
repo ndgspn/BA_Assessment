@@ -1,4 +1,6 @@
 # README
+
+### This appliation use JWT (Json Web Token)
 ```
 git clone git@github.com:ndgspn/BA_Assessment.git
 cd BA_Assessment/binar_api
@@ -6,7 +8,7 @@ rake db:create
 rake db:migrate
 rails s
 
-Aplikasi bisa diakses melalui url http://localhost:3000
+Application url http://localhost:3000
 
 ```
 
