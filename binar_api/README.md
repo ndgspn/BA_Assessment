@@ -2,11 +2,12 @@
 
 ### This application use RoR, JWT (Json Web Token) & sqlite3 .
 ```
-git clone git@github.com:ndgspn/BA_Assessment.git
-cd BA_Assessment/binar_api
-rake db:create
-rake db:migrate
-rails s
+# git clone git@github.com:ndgspn/BA_Assessment.git
+# cd BA_Assessment/binar_api
+# bundle install
+# rake db:create
+# rake db:migrate
+# rails s
 
 Application url http://localhost:3000
 
