@@ -36,15 +36,12 @@ Buatlah sebuah service RESTFul API berdasarkan dokumentasi apiary berikut.
 https://testbinar.docs.apiary.io/. Boleh menggunakan bahasa apapun.
 - Sertakan panduan cara instalasi tools, pengaturan database, penggunaan kode dan cara ujicoba kode dalam file Readme.md
 
-###### Create new rails application
-```
-rails new rest_binar
-```
-atau untuk menggunakan aplikasi yang sudah dibuat :
-
+###### Clone rails application
 ```
 git clone git@github.com:ndgspn/BA_Assessment.git
-cd BA_Assessment/rest_binar
+cd BA_Assessment/binar_api
+rake db:create
+rake db:migrate
 rails s
 ```
 Aplikiasi bisa diakses melalui url http://localhost:3000
