@@ -46,6 +46,8 @@ rails s
 ```
 Aplikiasi bisa diakses melalui url http://localhost:3000
 
+Aplikasi ini menggunakan JWT (Json Web Token)
+
 ###### Test via Postman
 ```
 # Login
