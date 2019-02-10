@@ -24,11 +24,10 @@ Prefix Verb   URI Pattern                                                       
                           PUT    /v1/products/:id(.:format)                                                               api/v1/products#update
                           DELETE /v1/products/:id(.:format)                                                               api/v1/products#destroy
               v2_products GET    /v2/products(.:format)                                                                   api/v2/products#index
-``
+```
 
 # Example
 
-```
 ##### Login
 http://localhost:3000/auth/login
 
