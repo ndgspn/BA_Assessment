@@ -26,4 +26,37 @@ Prefix Verb   URI Pattern                                                       
               v2_products GET    /v2/products(.:format)                                                                   api/v2/products#index
 ``
 
+# Example
 
+```
+# Login
+http://localhost:3000/auth/login
+
+# Create User
+http://localhost:3000/auth/signup
+
+# Show Data
+http://localhost:3000/v1/products
+
+# Show Data by ID
+http://localhost:3000/v1/products/:id
+
+# Create Data
+# Raw Data Example:
+# {
+#    "name": "polygon xtrada x4",
+#    "price": "2180",
+#    "imageurl": "https://polygoneeimages.s3.amazonaws.com/images/19342/xtrada_5_p.jpg"
+#}
+http://localhost:3000/v1/products/
+
+# Update Data
+http://localhost:3000/v1/products/:id
+
+# Delete
+http://localhost:3000/v1/products/:id
+
+
+# API V2
+http://localhost:3000/v2/products/
+```
