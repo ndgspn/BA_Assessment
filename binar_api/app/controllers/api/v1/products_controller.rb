@@ -19,13 +19,13 @@ module Api::V1
     def create
       @product = Product.new(product_params)
       return response_success if @product.save
-      render json: { errors: product.errors.full_messages }, status: :unprocessable_entity
+      response_error
     end
 
     def update
       @product = Product.product_id(params)
       return response_success if @product.update(product_params)
-      render json: { errors: product.errors.full_messages }, status: :unprocessable_entity
+      response_error
     end
 
     def destroy
@@ -36,6 +36,18 @@ module Api::V1
     private
     def product_params
       params.permit(:name, :price, :imageurl)
+    end
+
+    def response_success
+      render json: { status: :OK, result: @product }
+    end
+
+    def response_deleted
+      render json: { status: :OK, result: { message: "product with id: #{params[:id]} successfully deleted" } }
+    end
+
+    def response_error
+      render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
     end
   end
 end
