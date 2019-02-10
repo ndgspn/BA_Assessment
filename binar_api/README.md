@@ -74,12 +74,6 @@ Headers:
 - Authorization token
 - application/json
 
-Body:
-
-{
-	"email": "ranger@hitam.com",
-	"password": "passwordcom"
-}
 
 # Response:
 
