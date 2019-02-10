@@ -36,67 +36,7 @@ Buatlah sebuah service RESTFul API berdasarkan dokumentasi apiary berikut.
 https://testbinar.docs.apiary.io/. Boleh menggunakan bahasa apapun.
 - Sertakan panduan cara instalasi tools, pengaturan database, penggunaan kode dan cara ujicoba kode dalam file Readme.md
 
-###### Clone rails application
-```
-git clone git@github.com:ndgspn/BA_Assessment.git
-cd BA_Assessment/binar_api
-rake db:create
-rake db:migrate
-rails s
-```
-Aplikiasi bisa diakses melalui url http://localhost:3000
-
-Aplikasi ini menggunakan JWT (Json Web Token)
-
-###### Test via Postman
-```
-# Login
-# 'POST'
-http://localhost:3000/auth/login
-
-# Create User
-# 'POST'
-http://localhost:3000/auth/signup
-
-# Show Data
-# 'GET'
-http://localhost:3000/v1/products
-
-# Show Data by ID
-# 'GET' 
-http://localhost:3000/v1/products/:id
-
-# Create Data
-# 'POST'
-# Raw Data Example:
-# {
-#    "name": "polygon xtrada x4",
-#    "price": "2180",
-#    "imageurl": "https://polygoneeimages.s3.amazonaws.com/images/19342/xtrada_5_p.jpg"
-#}
-http://localhost:3000/v1/products/
-
-# Update Data
-# PUT
-# Raw Data Example:
-# {
-#    "name": "polygon xtrada x4",
-#}
-http://localhost:3000/v1/products/:id
-
-# Delete
-# 'DELETE'
-http://localhost:3000/v1/products/:id
-
-```
-
-don't forget to add Headers `Content-Type: Application/json`
-
-##### API V2
-```
-http://localhost:3000/v2/products/
-```
-
+Panduan: https://github.com/ndgspn/BA_Assessment/tree/master/binar_api
 
 ##### Sertakan tangkapan layar proses ujicoba API menggunakan postman.
 ###### Auth Login
