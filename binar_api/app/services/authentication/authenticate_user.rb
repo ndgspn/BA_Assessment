@@ -1,5 +1,5 @@
 module Authentication
-  class Create
+  class AuthenticateUser
     attr_accessor :email, :password
 
     def initialize(params)
