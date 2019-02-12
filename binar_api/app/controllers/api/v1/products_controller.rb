@@ -8,12 +8,10 @@ module Api::V1
     end
 
     def show
-      begin
-        @product = Product.product_id(params)
-        return response_success if @product
-      rescue ActiveRecord::RecordNotFound
-        render json: { errors: "Couldn't find product with id: #{params[:id]}" }
-      end
+      @product = Product.product_id(params)
+      return response_success if @product
+    rescue ActiveRecord::RecordNotFound
+      render json: { errors: "Couldn't find product with id: #{params[:id]}" }
     end
 
     def create
