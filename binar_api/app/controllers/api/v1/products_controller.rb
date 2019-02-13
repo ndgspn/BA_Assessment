@@ -1,6 +1,7 @@
 module Api::V1
   class ProductsController < ApiController
     before_action :authorize_request
+    rescue_from ActiveRecord::RecordNotFound, with: :product_not_found
 
     def index
       @product = Product.ordered
@@ -8,12 +9,8 @@ module Api::V1
     end
 
     def show
-      begin
         @product = Product.product_id(params)
         return response_success if @product
-      rescue ActiveRecord::RecordNotFound
-        render json: { errors: "Couldn't find product with id: #{params[:id]}" }
-      end
     end
 
     def create
@@ -48,6 +45,10 @@ module Api::V1
 
     def response_error
       render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
+    end
+
+    def product_not_found
+      render json: { errors: "Couldn't find product with id: #{params[:id]}" }
     end
   end
 end
