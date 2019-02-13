@@ -1,6 +1,5 @@
 module Authentication
   class AuthenticateUser
-    attr_accessor :email, :password
 
     def initialize(params)
       @email    = params[:email]
@@ -12,6 +11,7 @@ module Authentication
     end
 
     private
+    attr_accessor :email, :password
 
     def user
       user = User.find_by_email(email)
